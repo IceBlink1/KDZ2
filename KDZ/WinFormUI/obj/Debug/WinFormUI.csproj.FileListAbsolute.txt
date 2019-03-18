@@ -1,0 +1,13 @@
+H:\6ekrzaden\KDZ2-master\KDZ\WinFormUI\bin\Debug\WinFormUI.exe.config
+H:\6ekrzaden\KDZ2-master\KDZ\WinFormUI\bin\Debug\WinFormUI.exe
+H:\6ekrzaden\KDZ2-master\KDZ\WinFormUI\bin\Debug\WinFormUI.pdb
+H:\6ekrzaden\KDZ2-master\KDZ\WinFormUI\bin\Debug\CsvFileLibrary.dll
+H:\6ekrzaden\KDZ2-master\KDZ\WinFormUI\bin\Debug\DispensaryLibrary.dll
+H:\6ekrzaden\KDZ2-master\KDZ\WinFormUI\bin\Debug\CsvFileLibrary.pdb
+H:\6ekrzaden\KDZ2-master\KDZ\WinFormUI\bin\Debug\DispensaryLibrary.pdb
+H:\6ekrzaden\KDZ2-master\KDZ\WinFormUI\obj\Debug\WinFormUI.csprojResolveAssemblyReference.cache
+H:\6ekrzaden\KDZ2-master\KDZ\WinFormUI\obj\Debug\WinFormUI.Form1.resources
+H:\6ekrzaden\KDZ2-master\KDZ\WinFormUI\obj\Debug\WinFormUI.Properties.Resources.resources
+H:\6ekrzaden\KDZ2-master\KDZ\WinFormUI\obj\Debug\WinFormUI.csproj.GenerateResource.Cache
+H:\6ekrzaden\KDZ2-master\KDZ\WinFormUI\obj\Debug\WinFormUI.exe
+H:\6ekrzaden\KDZ2-master\KDZ\WinFormUI\obj\Debug\WinFormUI.pdb

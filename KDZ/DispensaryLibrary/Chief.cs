@@ -7,8 +7,10 @@ using System.Text.RegularExpressions;
 
 namespace DispensaryLibrary
 {
-    class Chief
+    public class Chief
     {
+        readonly string MaleGender = "мужской";
+        readonly string NamePattern = "^[А-ЯЁ][а-яё]* [А-ЯЁ][а-яё]* [А-ЯЁ][а-яё]*$";
         private string name;
 
         public Chief(string chiefPosition, string chiefGender, string chiefName, string phones)
@@ -16,10 +18,7 @@ namespace DispensaryLibrary
             ChiefName = chiefName;
             ChiefPosition = chiefPosition;
             ChiefGender = GetBoolGender(chiefGender);
-            foreach (string phone in phones.Split(';'))
-            {
-                Phones.Add(new Phone(phone));
-            }
+            Phones = Phone.GetPhoneList(phones);
         }
 
         public string ChiefPosition { get; private set; }
@@ -30,7 +29,7 @@ namespace DispensaryLibrary
             set
             {
                 if (!IsAppropriateName(value))
-                    throw new IllegalChiefNameException("");
+                    throw new IllegalChiefNameException("Имя начальника содержит недопустимые символы");
                 name = value;
             }
         }
@@ -38,11 +37,11 @@ namespace DispensaryLibrary
 
         private bool IsAppropriateName(string name)
         {
-            return Regex.IsMatch(name, "^[А-ЯЁ][а-яё]* [А-ЯЁ][а-яё]* [А-ЯЁ][а-яё]*$");
+            return Regex.IsMatch(name, NamePattern);
         }
         private bool GetBoolGender(string chiefGender)
         {
-            return chiefGender.ToLower() == "мужской";
+            return chiefGender.ToLower() == MaleGender;
         }
     }
 }

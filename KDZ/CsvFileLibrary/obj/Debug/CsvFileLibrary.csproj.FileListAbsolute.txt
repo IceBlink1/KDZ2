@@ -3,3 +3,8 @@ H:\6ekrzaden\KDZ_Sem2\CsvFileLibrary\bin\Debug\CsvFileLibrary.pdb
 H:\6ekrzaden\KDZ_Sem2\CsvFileLibrary\obj\Debug\CsvFileLibrary.csprojResolveAssemblyReference.cache
 H:\6ekrzaden\KDZ_Sem2\CsvFileLibrary\obj\Debug\CsvFileLibrary.dll
 H:\6ekrzaden\KDZ_Sem2\CsvFileLibrary\obj\Debug\CsvFileLibrary.pdb
+H:\6ekrzaden\KDZ2-master\KDZ\CsvFileLibrary\bin\Debug\CsvFileLibrary.dll
+H:\6ekrzaden\KDZ2-master\KDZ\CsvFileLibrary\bin\Debug\CsvFileLibrary.pdb
+H:\6ekrzaden\KDZ2-master\KDZ\CsvFileLibrary\obj\Debug\CsvFileLibrary.csprojResolveAssemblyReference.cache
+H:\6ekrzaden\KDZ2-master\KDZ\CsvFileLibrary\obj\Debug\CsvFileLibrary.dll
+H:\6ekrzaden\KDZ2-master\KDZ\CsvFileLibrary\obj\Debug\CsvFileLibrary.pdb

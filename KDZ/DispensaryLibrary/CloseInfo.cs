@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DispensaryLibrary
 {
-    class CloseInfo
+    public class CloseInfo
     {
         public CloseInfo()
         {

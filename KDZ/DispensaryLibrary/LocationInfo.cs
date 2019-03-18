@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DispensaryLibrary
 {
-    class LocationInfo
+    public class LocationInfo
     {
         static List<string> AppropriateAdministrativeAreaList = new List<string> { "Западный административный округ",
             "Центральный административный округ", "Северо-Западный административный округ", "Северо-Восточный административный округ",

@@ -1,0 +1,5 @@
+H:\6ekrzaden\KDZ2-master\KDZ\DispensaryLibrary\bin\Debug\DispensaryLibrary.dll
+H:\6ekrzaden\KDZ2-master\KDZ\DispensaryLibrary\bin\Debug\DispensaryLibrary.pdb
+H:\6ekrzaden\KDZ2-master\KDZ\DispensaryLibrary\obj\Debug\DispensaryLibrary.dll
+H:\6ekrzaden\KDZ2-master\KDZ\DispensaryLibrary\obj\Debug\DispensaryLibrary.pdb
+H:\6ekrzaden\KDZ2-master\KDZ\DispensaryLibrary\obj\Debug\DispensaryLibrary.csprojResolveAssemblyReference.cache

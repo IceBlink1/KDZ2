@@ -4,3 +4,13 @@ H:\6ekrzaden\KDZ_Sem2\Test\bin\Debug\Test.pdb
 H:\6ekrzaden\KDZ_Sem2\Test\obj\Debug\Test.exe
 H:\6ekrzaden\KDZ_Sem2\Test\obj\Debug\Test.pdb
 H:\6ekrzaden\KDZ_Sem2\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+H:\6ekrzaden\KDZ2-master\KDZ\Test\bin\Debug\Test.exe.config
+H:\6ekrzaden\KDZ2-master\KDZ\Test\obj\Debug\Test.exe
+H:\6ekrzaden\KDZ2-master\KDZ\Test\obj\Debug\Test.pdb
+H:\6ekrzaden\KDZ2-master\KDZ\Test\bin\Debug\Test.exe
+H:\6ekrzaden\KDZ2-master\KDZ\Test\bin\Debug\Test.pdb
+H:\6ekrzaden\KDZ2-master\KDZ\Test\bin\Debug\CsvFileLibrary.dll
+H:\6ekrzaden\KDZ2-master\KDZ\Test\bin\Debug\DispensaryLibrary.dll
+H:\6ekrzaden\KDZ2-master\KDZ\Test\bin\Debug\CsvFileLibrary.pdb
+H:\6ekrzaden\KDZ2-master\KDZ\Test\bin\Debug\DispensaryLibrary.pdb
+H:\6ekrzaden\KDZ2-master\KDZ\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DispensaryLibrary
 {
-    class Phone
+    public class Phone
     {
         private string phoneNumber;
 
@@ -24,9 +24,13 @@ namespace DispensaryLibrary
                 phoneNumber = value;
             }
         }
+        public static List<Phone> GetPhoneList(string input)
+        {
+            return Regex.Split(input, "; *", RegexOptions.ExplicitCapture).ToList().ConvertAll(s => new Phone(s));
+        }
         private bool IsStandardPhoneNumber(string number)
         {
-            return Regex.IsMatch(number, @"\(\d{3}\) \d{3}-\d{2}-\d{2}");
+            return Regex.IsMatch(number, @"\(\d{3}\) \d{3}-\d{2}-\d{2}") || number == "";
         }
     }
 }

@@ -49,6 +49,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CsvFileLibrary\CsvFileLibrary.csproj">
+      <Project>{0d6e0e94-ca30-4801-8c52-dee5371425b1}</Project>
+      <Name>CsvFileLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DispensaryLibrary\DispensaryLibrary.csproj">
+      <Project>{e4c188e3-d6ef-4c07-bb7e-30cda0be70e1}</Project>
+      <Name>DispensaryLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

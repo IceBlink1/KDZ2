@@ -46,12 +46,15 @@
     <Compile Include="DispensaryLibException.cs" />
     <Compile Include="IllegalAreaException.cs" />
     <Compile Include="IllegalChiefNameException.cs" />
+    <Compile Include="IllegalCloseInfoException.cs" />
+    <Compile Include="IllegalCoordinateException.cs" />
     <Compile Include="IllegalDateException.cs" />
     <Compile Include="IllegalDistrictException.cs" />
     <Compile Include="IllegalEmailException.cs" />
     <Compile Include="IllegalIdException.cs" />
     <Compile Include="IllegalLocationInfoException.cs" />
     <Compile Include="IllegalPhoneNumberException.cs" />
+    <Compile Include="IllegalPostalCodeException.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="LocationInfo.cs" />
     <Compile Include="Phone.cs" />

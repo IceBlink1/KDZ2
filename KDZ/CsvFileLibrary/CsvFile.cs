@@ -4,17 +4,47 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.IO;
+using System.Text;
 
 namespace CsvFileLibrary
 {
-    class CsvFile
+    public enum DefaultFields
+    {
+        ROWNUM,
+        FullName,
+        ShortName,
+        AdmArea,
+        District,
+        PostalCode,
+        Address,
+        ChiefName,
+        ChiefPosition,
+        ChiefGender,
+        ChiefPhone,
+        PublicPhone,
+        Fax,
+        Email,
+        CloseFlag,
+        CloseReason,
+        CloseDate,
+        ReopenDate,
+        WorkingHours,
+        ClarificationOfWorkingHours,
+        Specialization,
+        BeneficialDrugPrescriptions,
+        ExtraInfo,
+        POINT_X,
+        POINT_Y,
+        GLOBALID
+    }
+    public class CsvFile
     {
 
         public CsvFile(string path, bool ignoreHeader)
         {
-            using (StreamReader s = new StreamReader(path))
+            using (StreamReader s = new StreamReader(path, Encoding.UTF8))
             {
-                if (ignoreHeader == true)
+                if (ignoreHeader)
                 {
                     Header = DefaultHeader;
                 }
@@ -26,8 +56,9 @@ namespace CsvFileLibrary
                 string line;
                 while ((line = s.ReadLine()) != null)
                 {
-                    Fields.Add(Regex.Split(line, "(\"?;\"|\";\"?)").ToList());
+                    Fields.Add(Regex.Split(line, "(\"?;\"|\";\"?)", RegexOptions.ExplicitCapture).ToArray());
                 }
+                Length = Fields.ToArray().Length;
             }
         }
         public string[] DefaultHeader { get; private set; } = new string[] {
@@ -38,18 +69,28 @@ namespace CsvFileLibrary
             "CloseDate", "ReopenDate", "WorkingHours", "ClarificationOfWorkingHours",
             "Specialization",   "BeneficialDrugPrescriptions", "ExtraInfo",
             "POINT_X", "POINT_Y", "GLOBALID" };
-        public List<List<string>> Fields { get; private set; }
-        public string[] Header { get; private set; }
+        public List<string[]> Fields { get; set; } = new List<string[]>();
+        public string[] Header { get; set; }
         public int Length { get; private set; }
 
-        public void Save(string path) // fu
+        public void IncLength()
         {
-            using (StreamWriter s = new StreamWriter(path))
+            Length++;
+        }
+        public void DecLength()
+        {
+            Length--;
+        }
+
+        public void Save(string path)
+        {
+            using (StreamWriter s = new StreamWriter(path, false, Encoding.UTF8))
             {
-                s.WriteLine(string.Join(";",Header) + ";");
+                s.WriteLine(string.Join(";", Header) + ";");
                 for (int i = 0; i < Length; i++)
                 {
-                    s.WriteLine(string.Join("\";\"", Fields[i].ToArray()) + "\";"); //TODO: Переделать для первого элемента
+                    s.WriteLine(Fields[i][0] + ";\"" +
+                        string.Join("\";\"", Fields[i], 1, Fields[i].Length - 1) + "\";");
                 }
             }
         }
